@@ -1,0 +1,11 @@
+<h1>Calculator</h1>
+<h3>Input example:
+  5*3+1+6/2+9*100</h3>
+<% flash.each do |key, value| %>
+  <%= content_tag :div, value, id: "flash_error" %>
+<% end %>
+<%= form_with url: calculator_solve_path do%>
+  <%= text_field_tag(:user_input) %>
+  <%= submit_tag (:calculate) %>
+<% end %>
+<div id="solution"></div>
