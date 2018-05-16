@@ -1,25 +1,29 @@
-# README
+# String Calculator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+This is a Rails app for calculating string input using my own implementation of operators (such as +, -, /,*) on any number of integer arguments.
 
-* Ruby version
+Input example:
+```
+5*3+1+6/2+9*100
+```
 
-* System dependencies
+Expected output:
+```
+5*3+1+6/2+9*100
+919
+```
+### Setup
+```
+- Download into your directory of your choice.
+- Run bundle (install)
+- Run "rails s'
 
-* Configuration
+Go to localhost:3000/ and you should see the calculator page
+Make sure your browser support AJAX
+```
+## Running the tests
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# calculator
+```
+rails test test/helpers/application_helper_test.rb
+```
